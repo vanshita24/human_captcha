@@ -27,27 +27,19 @@ randomImage[7] = "https://media.istockphoto.com/photos/cat-and-a-dog-lie-togethe
 var number = Math.floor(Math.random()*randomImage.length); 
 
 $(document).ready(function(){
-    $("button").click(function(){
-        for(var i=1;i<=16;i++){
+    for(var i=1;i<=16;i++){
             $('.img'+i).children('img').attr("src",randomImage[number]);
             number = Math.floor(Math.random()*randomImage.length);
+           
 
         }
-        
-           
-    
-       
-})
-
-$('.ui medium image').click(function(){
-
-})
-
+    $("button").click(function(){
+       location.reload(true);
+    });
+         
 })
 
 
-
-    
 </script>
 
 </head>
@@ -61,7 +53,7 @@ $('.ui medium image').click(function(){
                 <div class="ui mobile reversed equal width grid">
                     <div class="column">
                         <input type="checkbox" id="myCheckbox1" />
-                        <label for="myCheckbox1" class="img1"><img class=" ui medium image"src="https://images.unsplash.com/photo-1662581872342-3f8e0145668f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" ></label>
+                        <label for="myCheckbox1" class="img1"><img class=" ui medium image"src=""></label>
                         
                     </div>
                     <div class="column">
